@@ -1,0 +1,510 @@
+@charset "UTF-8";
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+/* Подключение шрифта*/
+@font-face {
+  font-family: "Exo2.0-Thin";
+  src: url("../../fonts/Exo2.0-Thin.eot");
+  src: local("☺"), url("../../fonts/Exo2.0-Thin.woff") format("woff"), url("fonts/Exo2.0-Thin.ttf") format("truetype"), url("fonts/Exo2.0-Thin.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*--------------------*/
+body {
+  font-family: "Trebuchet MS";
+  font-weight: 400;
+  background: url("../img/Pattern.png");
+}
+
+h1 {
+  font-family: "Exo2.0-Thin";
+  text-shadow: 0 1px 0 #000;
+  color: #fff;
+  font-size: 36px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+  color: #000;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+.input {
+  display: none;
+}
+
+.input:checked+div {
+  background-color: #b3b3b3;
+  padding: 23px 10px 0px 10px;
+  margin: 0px 30px 0px 30px;
+}
+
+.input:checked+.content-product-№1 {
+  background-color: #1698d9;
+  padding: 23px 10px 0px 10px;
+  margin: 0px 30px 0px 30px;
+}
+
+.input:checked+.content-product-№1 a {
+  color: red;
+}
+
+.input:checked+.content-product-№2 {
+  background-color: #d91667;
+  padding: 23px 10px 0px 10px;
+  margin: 0px 30px 0px 30px;
+}
+
+.wrapper {
+  min-height: 100%;
+  max-width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  max-height: 680px;
+  width: 1280px;
+  align-items: center;
+  vertical-align: center;
+}
+
+.content-top {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  padding: 47px 0px 0px 0px;
+  text-align: center;
+}
+
+.content-product {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  justify-content: center;
+  max-height: 536px;
+  width: 100%;
+  padding: 0px;
+}
+
+/*---------PRODUCT 1---------*/
+.content-product-№1 {
+  display: flex;
+  flex-direction: column;
+  padding: 23px 40px 0px 40px;
+  height: 100%;
+}
+
+.product-№1__description {
+  background: url("..//..//img/Back_blue.png") no-repeat center center;
+  background-size: 100% 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 320px;
+  height: 100%;
+}
+
+.product-№1__text {
+  color: #666666;
+  font-size: 16px;
+  padding: 24px 0px 0px 49px;
+}
+
+.product-№1__brand {
+  padding: 10px 0px 0px 49px;
+}
+
+.product-№1__tasty {
+  padding: 3px 0px 0 49px;
+}
+
+.product-№1__reserve {
+  color: #666666;
+  font-size: 14px;
+  padding: 16px 0px 0 49px;
+}
+
+.product-№1__reserve span {
+  font-weight: 700;
+}
+
+.product-№1__bonus {
+  color: #666666;
+  font-size: 14px;
+  padding: 3px 0px 0 49px;
+  flex: 1 1 auto;
+}
+
+.product-№1__cats {
+  padding: 32px 0 4px 4px;
+}
+
+.product-№1__weight {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 81px;
+  height: 81px;
+  background-color: #1698d9;
+  border-radius: 50%;
+  text-align: center;
+  padding: 25px 0 0 0;
+}
+
+.product-№1__weight span:first-child {
+  font-size: 42px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.product-№1__weight span:last-child {
+  font-size: 22px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.product-№1__info {
+  font-size: 14px;
+  color: #fff;
+  padding: 10px 0 3px 0;
+  font-family: "Trebuchet MS";
+  width: 320px;
+  text-align: center;
+}
+
+.product-№1__info a {
+  color: #1698d9;
+  font-weight: 700;
+}
+
+/*---------PRODUCT 2---------*/
+.content-product-№2 {
+  display: flex;
+  flex-direction: column;
+  padding: 23px 40px 0px 40px;
+  height: 100%;
+}
+
+.product-№2__description {
+  display: flex;
+  flex-direction: column;
+  background: url("..//..//img/Back_red.png") no-repeat center center;
+  background-size: 100% 100%;
+  position: relative;
+  max-width: 320px;
+  height: 100%;
+}
+
+.product-№2__text {
+  color: #666666;
+  font-size: 16px;
+  padding: 24px 0px 0px 49px;
+}
+
+.product-№2__brand {
+  padding: 10px 0px 0px 49px;
+}
+
+.product-№2__tasty {
+  padding: 3px 0px 0 49px;
+}
+
+.product-№2__reserve {
+  color: #666666;
+  font-size: 14px;
+  padding: 16px 0px 0 49px;
+}
+
+.product-№2__reserve span {
+  font-weight: 700;
+}
+
+.product-№2__bonus {
+  color: #666666;
+  font-size: 14px;
+  padding: 3px 0px 0 49px;
+  flex: 1 1 auto;
+}
+
+.product-№2__bonus span {
+  font-weight: 700;
+}
+
+.product-№2__cats {
+  padding: 32px 0 4px 4px;
+}
+
+.product-№2__weight {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 81px;
+  height: 81px;
+  background-color: #d91667;
+  border-radius: 50%;
+  text-align: center;
+  padding: 25px 0 0 0;
+}
+
+.product-№2__weight span:first-child {
+  font-size: 42px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.product-№2__weight span:last-child {
+  font-size: 22px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.product-№2__info {
+  width: 320px;
+  font-family: "Trebuchet MS";
+  letter-spacing: -0.4px;
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  padding: 10px 0 3px 0;
+}
+
+/*---------PRODUCT 3---------*/
+.content-product-№3 {
+  display: flex;
+  flex-direction: column;
+  padding: 23px 40px 0px 40px;
+  height: 100%;
+}
+
+.img_test {
+  position: relative;
+}
+
+.product-№3__description {
+  display: flex;
+  flex-direction: column;
+  background: url("..//..//img/Back_grey.png") no-repeat center center;
+  background-size: 100% 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 320px;
+  height: 100%;
+  opacity: 0.5;
+}
+
+.product-№3__description:hover {
+  opacity: 1;
+  transition: all 1.5s ease;
+}
+
+.product-№3__text {
+  color: #666666;
+  font-size: 16px;
+  padding: 24px 0px 0px 49px;
+}
+
+.product-№3__brand {
+  padding: 10px 0px 0px 49px;
+}
+
+.product-№3__tasty {
+  padding: 3px 0px 0 49px;
+}
+
+.product-№3__reserve {
+  color: #666666;
+  font-size: 14px;
+  padding: 16px 0px 0 49px;
+}
+
+.product-№3__reserve span {
+  font-weight: 700;
+}
+
+.product-№3__bonus {
+  color: #666666;
+  font-size: 14px;
+  padding: 3px 0px 0 49px;
+  flex: 1 1 auto;
+}
+
+.product-№3__bonus span {
+  font-weight: 700;
+}
+
+.product-№3__cats {
+  padding: 18px 0 4px 4px;
+}
+
+.product-№3__weight {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  width: 81px;
+  height: 81px;
+  background-color: #b3b3b3;
+  border-radius: 50%;
+  text-align: center;
+  padding: 25px 0 0 0;
+}
+
+.product-№3__weight span:first-child {
+  font-size: 42px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.product-№3__weight span:last-child {
+  font-size: 22px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.product-№3__info {
+  text-align: center;
+  font-size: 14px;
+  color: #c2c24e;
+  padding: 10px 0 3px 0;
+  font-family: "Trebuchet MS";
+  width: 320px;
+}
+
+@media (max-width: 1110px) {
+  .wrapper {
+    justify-content: flex-end;
+    align-items: inherit;
+  }
+}
+
+@media (max-width: 380px) {
+
+  .content-product-№1,
+  .content-product-№2,
+  .content-product-№3 {
+    padding-left: 0;
+    padding-right: 0;
+    padding: 23px 0px 0px 0px;
+    margin: 0px;
+  }
+
+  .content-top {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  .wrapper {
+    justify-content: center;
+    align-items: center;
+  }
+}
